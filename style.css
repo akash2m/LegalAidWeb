@@ -1,0 +1,10 @@
+#container {
+    position: relative;
+}
+#image2 {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    
+}
+

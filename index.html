@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Web</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="vendor/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+  <!-- Include Leaflet CSS and JavaScript -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Set the size of the map container -->
+  <style>
+      #map {
+          height: 400px;
+          width: 100%;
+      }
+  </style>
+
+
+</head>
+<body>
+  <header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="asset/Logo.png" height="50" alt="Brand-logo">
+
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggler="collapse" data-bs-target="#navbar1">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <div class="navbar-nav ms-auto" padding="60px">
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link active">Lawyer</a>
+                  
+                    <a href="#" class="nav-item nav-link active" data-bs-toggle="dropdown">About</a>
+                  
+                    <a href="#" class="nav-item nav-link active">Educational content</a>
+                    <a href="#" class="nav-item nav-link active">FAQ</a>
+                    <a href="#" class="nav-item nav-link active">IPC Section</a>
+                    <a href="#" class="nav-item nav-link">contact</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div id="container">
+        <img src="asset/Front Photo.jpg" id="image1" width="100%" height="100%">
+        <!-- <div class="top-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div> -->
+        <img src="asset/Legal Aid - Image.png" id="image2">
+        
+    </div>
+    
+  </header>
+  <main>
+    <section class="container" id="about-us">
+        <div class="row">
+            <h3 class="display-8">Educational Page</h3>
+            <div class="col-md-4">
+                <div class="container text-center">
+                    <!-- <span class="bi bi-person color-teal icon-lg"></span> -->
+                
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container text-center">
+                    <span class="bi bi-shield-shaded color-teal icon-lg"></span>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container text-center">
+                    <span class="bi bi-list color-teal icon-lg"></span>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="container">
+        <h6 class="display-5 text-center">Area Of Law</h6>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="card" style="width: 300px;">
+                        <img class="card-img-top" src="asset/Family - Ellipse.png">
+                        <div class="container text-center" >
+                            <h4 class="card-title">Family law</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus similique placeat deleniti beatae reiciendis, laudantium ipsum ullam, labore, dolores voluptates at. Veritatis quam fugiat eum earum, quia est omnis.</p>
+                        
+                            <button>read more</button>     
+     
+                            
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="card" style="width: 300px;">
+                        <img class="card-img-top" src="asset/Criminal - Ellipse.png">
+                        <div class="container text-center" >
+                            <h4 class="card-title">Criminal law</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus similique placeat deleniti beatae reiciendis, laudantium ipsum ullam, labore, dolores voluptates at. Veritatis quam fugiat eum earum, quia est omnis.</p>
+                        
+                            <button>read more</button>     
+      
+                            
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="card" style="width: 300px;">
+                        <img class="card-img-top" src="asset/Estate - Ellipse.png">
+                        <div class="container text-center" >
+                            <h4 class="card-title">Estate planning</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus similique placeat deleniti beatae reiciendis, laudantium ipsum ullam, labore, dolores voluptates at. Veritatis quam fugiat eum earum, quia est omnis.</p>
+                            <button>read more</button>     
+      
+                            
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                  <div class="card" style="width: 300px;">
+                      <img class="card-img-top" src="asset/Cybercrime - Ellipse.png">
+                      <div class="container text-center" >
+                          <h4 class="card-title">Cybercrime law</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus similique placeat deleniti beatae reiciendis, laudantium ipsum ullam, labore, dolores voluptates at. Veritatis quam fugiat eum earum, quia est omnis.</p>
+                          
+                          <button>read more</button>     
+      
+                          
+                      </div>
+                  
+                  </div>
+              </div>
+              <div class="col-md-3 d-flex align-items-center justify-content-center">
+                <div class="card" style="width: 300px;">
+                    <img class="card-img-top" src="asset/Corporate - Ellipse.png">
+                    <div class="container text-center" >
+                        <h4 class="card-title">Corporate law</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus similique placeat deleniti beatae reiciendis, laudantium ipsum ullam, labore, dolores voluptates at. Veritatis quam fugiat eum earum, quia est omnis.</p>
+                        
+                        <button>read more</button>     
+     
+                        
+                    </div>
+                
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center justify-content-center">
+              <div class="card" style="width: 300px;">
+                  <img class="card-img-top" src="asset/Landlord - Ellipse.png">
+                  <div class="container text-center" >
+                      <h4 class="card-title">Landlord & Tenant Law</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus similique placeat deleniti beatae reiciendis, laudantium ipsum ullam, labore, dolores voluptates at. Veritatis quam fugiat eum earum, quia est omnis.</p>
+                      
+                      <button >read more</button>     
+      
+                      
+                  </div>
+              
+              </div>
+          </div>
+          <div class="col-md-3 d-flex align-items-center justify-content-center">
+            <div class="card" style="width: 300px;">
+                <img class="card-img-top" src="asset/Business - Ellipse.png">
+                <div class="container text-center" >
+                    <h4 class="card-title">Small business law</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus similique placeat deleniti beatae reiciendis, laudantium ipsum ullam, labore, dolores voluptates at. Veritatis quam fugiat eum earum, quia est omnis.</p>
+                    
+                    <button>read more</button>     
+                    
+                </div>
+            
+            </div>
+        </div>
+        <div class="col-md-3 d-flex align-items-center justify-content-center">
+          <div class="card" style="width: 300px;">
+              <img class="card-img-top" src="asset/Labour - Ellipse.png">
+              <div class="container text-center" >
+                  <h4 class="card-title">Labour & services Law</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus similique placeat deleniti beatae reiciendis, laudantium ipsum ullam, labore, dolores voluptates at. Veritatis quam fugiat eum earum, quia est omnis.</p>
+                  
+                  <button >read more</button>    
+                  
+              </div>
+          
+          </div>
+      </div>
+            </div>
+        </div>
+        <button>Know more</button>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="container">
+                    <h3 class="display-5 text-center">Videos</h3>
+                    <img src="https://dummyimage.com/600x400/000/fff" class="d-block w-100" alt="About us">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="container">
+                    <h3 class="display-5 text-center">Articles</h3>
+
+                    <img src="https://dummyimage.com/600x400/000/fff" class="d-block w-100" alt="About us">
+
+
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h1>Contact Page</h1>
+        <h6 class="display-6 text-center">contact us</h6>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="container">
+                  
+                    <div class="card-shadow" style="width: 400px;">
+                        <div class="card-body">
+                            <p class="text-muted text-center fs-3">Here's our contact information</p>
+                            <div class="text-black-s text-center fs-4">our email</div>
+                            <div class="text-black-s text-center fs-5">support@example.com</div>
+                            <div class="text-black-s text-center fs-4">our phone no.</div>
+                            <div class="text-black-s text-center fs-5">+91 12345698</div>
+                            <div class="text-black-s text-center fs-4">follow us on </div>
+                            <div class="text-black-s text-center fs-5">facebook</div>
+                            <div class="text-black-s text-center fs-5">instagram</div>
+                        </div>
+                       
+                    </div>    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="text-muted text-center fs-3">You can also write to us</p>
+                <div class="container">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Enter your name</label>
+                                    <input type="text" class="form-control" name="name" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="emailid" class="form-label">Enter your email</label>
+                                    <input type="text" class="form-control" name="emailid" id="emailid">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Enter the subject</label>
+                                    <input type="text" class="form-control" name="subject" id="subject">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Enter your message</label>
+                                    <textarea class="form-control" name="message" id="message"></textarea>
+                                </div>
+                                <div class="form-group text-center">
+                            
+                                    <input type="submit" class="btn btn-outline-dark" value="send message">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <h1> Map</h1>
+    <!-- Create a div element to hold the map -->
+    <div id="map"></div>
+
+    <script>
+        // Initialize and add the map
+        var map = L.map('map').setView([51.505, -0.09], 13); // Set the initial map center and zoom level
+
+        // Add the base OpenStreetMap tile layer to the map
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add a marker to the map
+        var marker = L.marker([51.5, -0.09]).addTo(map)
+            .bindPopup('A sample popup!') // Set a popup message when clicking on the marker
+            .openPopup(); // Automatically open the popup when the marker is added to the map
+    </script>
+
+
+
+
+
+
+    
+</main>
+<footer class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="container">
+                    <img src="asset/Logo.png" height="30px" class="bd-white">
+                    <div>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta qui necessitatibus reiciendis nam dolorum voluptas laboriosam quasi saepe perspiciatis aperiam tenetur nesciunt explicabo eligendi ex facere, ipsam exercitationem eum dolorem.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="container">
+                    <p class="text-white fs-5">Quick link</p>
+                    <ul class="remove-bullets remove-text-decoration">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="vendor/bootstrap/bootstrap/js/bootstrap.js" ></script>
+  <script src="index.js"></script>
+</body>
+</html>
