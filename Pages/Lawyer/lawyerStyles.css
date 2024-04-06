@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color: #EAE9E9;
+}
+
+.navbar{
+    background-color: #9ACD32;
+    padding: 8px;
+}
+
+.navbar li{
+    float: right;
+    list-style: none;
+    margin:16px 20px;
+    padding-top: 3px;
+}
+
+.navbar ul{
+    overflow: auto;
+}
+
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color:#122f0c;
+}
+
+.navbar a :active {
+    font-weight: 600;
+}
+
+.navbar a{
+    transition: color 0.3s ease;
+}
+
+#logo{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+
+}
+
+
+
+.midcontainer{
+  padding:15px 15px;
+  background-color: #FFF;
+  height: 20vh;
+  width: 20%;
+  margin: 3rem 2rem 4rem 15rem;
+  text-align:start;
+  border-radius: 14px;
+  box-shadow: 2px 3px #798590;
+
+
+}
+
+.midcontainertxt{
+  margin: 3px 3px;
+  padding: 3px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.midcontainericon{
+   margin-right: 10px;
+   border-radius: 40%;
+
+}
+
+.sndmidcontainer{
+  padding:15px 15px;
+  background-color: #FFF;
+  height: 20vh;
+  width: 25%;
+  margin: 3rem 15rem 4rem 3rem;
+  text-align:start;
+  border-radius: 14px;
+  box-shadow: 2px 3px #798590;
+  float: right;
+
+}
+
+.sndmidcontainertxt{
+margin: 1px 2px;
+padding: 2px;
+font-family: "Poppins", sans-serif;
+font-weight: 300;
+}
+
+.sndmidcontainer h3{
+font-weight: 400;
+}
+
+.sndmidcontainer h2{
+font-weight: 800;
+color: rgb(181, 48, 48);
+}
+
+/* --------- */
+
+section h2{
+  text-align: center;
+  padding: 0 0 15px 15px;
+  margin-top: 10rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+#cCarousel {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+#cCarousel .arrow {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 26px;
+  color: #FFF;
+  background: #00000072;
+  cursor: pointer;
+}
+
+#cCarousel #prev {
+  left: 0px;
+}
+
+#cCarousel #next {
+  right: 0px;
+}
+
+#carousel-vp {
+  width: 770px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+@media (max-width: 770px) {
+  #carousel-vp {
+    width: 510px;
+  }
+}
+
+@media (max-width: 510px) {
+  #carousel-vp {
+    width: 250px;
+  }
+}
+
+#cCarousel #cCarousel-inner {
+  display: flex;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  gap: 10px;
+  left: 0px;
+}
+
+.cCarousel-item {
+  width: 250px;
+  height: 365px;
+  border: 2px solid white;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.cCarousel-item img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 246px;
+  color: white;
+}
+
+.cCarousel-item .infos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  color: black;
+}
+
+.cCarousel-item .infos button {
+  background: #222;
+  padding: 10px 30px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
